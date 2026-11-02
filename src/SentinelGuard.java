@@ -4,7 +4,7 @@ public class SentinelGuard {
     private GuardState currentState;
 
     public SentinelGuard() {
-        currentState = new IdleState(this);
+        currentState = new SleepingState(this);
     }
 
     public void setState(GuardState state) {
