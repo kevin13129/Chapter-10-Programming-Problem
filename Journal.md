@@ -1,4 +1,3 @@
-# Journal
-## Phase 1
+## Phase 2
 
-In this phase I used an enum and if statements to control how the guard reacts. I used two if statements with additional conditions to handle the different states. From what I understand, adding something like Sleeping would mean going back and checking the logic in all three methods. I can see how this could get messy as more states are added.
+In this phase I replaced the enum and if statements with separate state classes. From what I understand, SentinelGuard is now the Context, meaning it holds the current state and passes the commands to it. Each state handles its own behavior and decides when to switch states. I think this is cleaner because we don't have to keep checking the enum every time something happens.
