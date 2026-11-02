@@ -3,6 +3,11 @@ public class SentinelGuard {
 
     private GuardState currentState;
 
+    public void printState() {
+        System.out.println("Current State: " +
+                currentState.getClass().getSimpleName());
+    }
+
     public SentinelGuard() {
         currentState = new SleepingState(this);
     }
